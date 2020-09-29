@@ -20,7 +20,7 @@
 	</properties>
 
 	<dependencies>
-		
+
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -42,12 +42,22 @@
 		<dependency>
 			<groupId>org.awaitility</groupId>
 			<artifactId>awaitility</artifactId>
-			<version>3.1.2</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-tomcat</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.example</groupId>
+			<artifactId>MongoCrudLib</artifactId>
+			<version>0.0.1</version>
 		</dependency>
 	</dependencies>
 

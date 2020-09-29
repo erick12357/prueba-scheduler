@@ -50,7 +50,7 @@ public class ConsumirServicio {
 	}
 
 	
-	/*
+	/**
 	 * Elimina las colecciones de las alcaldias y unidades disponibles 
 	 * y las restablece con los valores recuperados en cada consulta al servicio  
 	 * 
